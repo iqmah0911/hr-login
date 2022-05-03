@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+}
+
+body {
+    background-color: #fff;
+    position: relative;
+    padding: 20px 10%;
+}
+body::before {
+    content: '';
+    position: fixed;
+    width: 300px;
+    height: 300px;
+    transform: rotate(45deg);
+    bottom: -150px;
+    left: -150px;
+    background-color: #FF7804;
+    z-index: 0;
+}
+
+body::after {
+    content: '';
+    position: fixed;
+    background-color: #FF7804;
+    top: -20%;
+    right: -10%;
+    width: 60vw;
+    max-width: 700px;
+    height: 150%;
+    transform: rotate(15deg);
+    z-index: -1;
+}
+
+ .container-forms {
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+}
+
+.left {
+    display: flex;
+}
+
+.container-forms form {
+        color: #1D5DC0;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 20px;
+    width: 350px;
+}
+
+.container-forms p{
+    font-family: 'Noto Sans';
+    font-weight: 400;
+    font-style: normal;
+    line-height: 22px;
+    font-size: 16px;
+
+}
+    
+.container-forms input {
+left: 1%;
+background-color:  #fafafa;
+font-size: 16px;
+width: 90%;
+padding: 5px 5px;
+border: 1px solid #c7c7c7;
+}
+
+.intro  h1{
+    margin-left: 30px;
+    font-family: 'Noto Sans';
+    color:#fff ;
+    font-size: 24px;
+    font-weight: 500;
+    
+}
+
+.intro h2 {
+    left: 50px;
+    position: relative;
+    color: #fff;
+    font-family: 'Noto Sans';
+    font-size: 34px;
+    font-weight: 900;
+    padding-bottom: 20px;
+    
+}
+
+.intro a {
+    padding-left: 90px;
+    font-size: 16px;
+    color: white;
+    text-decoration: none;
+    font-family: 'Noto Sans';
+}
+.line {
+    margin-left: 70px;
+    background-color: white;
+    margin-bottom: 20px;
+    width: 150px;
+    height: 2px;
+   
+}
+.header h1{
+    font-family: 'Noto Sans';
+    color: #5B5B5B;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 34px;
+    
+}
+
+.footer h1{
+    font-family: 'Noto Sans';
+    color: #777;
+    font-size: 16px;
+    font-weight: 600;
+    font-style: normal;
+    line-height: 22px;
+}
+
+form button {
+    border: none;
+    outline: none;
+    display: block;
+    margin: 20px auto;
+    padding: 5px 40px;
+    background-color: #1D5DC0;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 20px;
+    text-align: center;
+    border-radius: 20px;
+    color: white;
+    padding-left: 20px;
+
+
+}
+
+.dot1 {
+    height: 14px;
+    width: 14px;
+    background-color: #1D5DC0;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 30px 0 0 10px;
+  
+  }
+  
+   .dot2 {
+    height: 14px;
+    width: 14px;
+    background-color: #FF7804;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 30px 0 0 10px;
+  }
+  
+   .dot3 {
+    height: 14px;
+    width: 14px;
+    background-color: #1D5DC0;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 30px 0 0 10px;
+  }
+  
+  .dot4 {
+    height: 14px;
+    width: 14px;
+    background-color: #FF7804;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 30px 0 0 10px;
+  }
+
+  @media screen and (max-width: 900px) {
+      body::after {
+          display: none;
+      }
+
+      body::before{
+          display: none;
+      }
+
+      .container-forms {
+          flex-direction: column-reverse;
+      }
+  }
